@@ -1,6 +1,6 @@
 # Community Transmission Prompts
 
-Lightweight creative prompts for community participation. No prizes or token activity required.
+Lightweight creative prompts for Chihuahua community participation.
 
 ## Transmission 001 — Wrong Place
 
@@ -38,4 +38,4 @@ Examples: empty mall, motel desk, gas station, rooftop, warehouse, diner.
 
 **Prompt:** Turn Chihuahua into a boss encounter from a lost PS2 game.
 
-The goal is participation, not competition. Keep prompts broad enough that different creators produce visibly different interpretations.
+Keep prompts broad enough that different creators produce visibly different interpretations.
