@@ -40,6 +40,13 @@ Then describe your idea:
 
 You can name a mode or let the Engine choose.
 
+## Need an idea?
+
+- Browse [30 community idea starters](./COMMUNITY_IDEAS.md).
+- Try one of the [starter examples](./examples/README.md).
+
+Copy an idea, change anything you want, and let the Engine handle the production details.
+
 ## Community use
 
 Same recognizable Chihuahua. Different people's ideas.
