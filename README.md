@@ -10,6 +10,12 @@ Tell the Engine what Chihuahua is doing. It handles the character, old-game grap
 
 Download [CHIHUAHUA_COMMUNITY_ENGINE.zip](./CHIHUAHUA_COMMUNITY_ENGINE.zip).
 
+## Canonical Character Reference
+
+This turnaround is the official visual identity reference for keeping the same Chihuahua across community creations. Keep the pink durag, head shape, eyes, body proportions, fur color, and silhouette consistent; scenes, outfits, props, poses, and expressions may change.
+
+![Pink Durag Chihuahua character reference](./assets/chihuahua-character-sheet.png)
+
 ## Install in ChatGPT
 
 This method works in regular ChatGPT on mobile and desktop.
