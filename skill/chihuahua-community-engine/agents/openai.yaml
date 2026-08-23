@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chihuahua Community Engine"
+  short_description: "Create Chihuahua images, scenes, loops, and ads"
+  default_prompt: "Use $chihuahua-community-engine to make an image of Chihuahua working the night shift at a gas station."

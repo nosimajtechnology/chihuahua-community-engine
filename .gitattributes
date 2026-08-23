@@ -1,0 +1,10 @@
+# The Skill zip is built from the checked-out files, so line endings must
+# be the same on every machine or the build is not reproducible.
+* text=auto
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.png binary
+*.jpg binary
+*.zip binary
