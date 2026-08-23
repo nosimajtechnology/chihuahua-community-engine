@@ -8,7 +8,13 @@ Tell the Engine what Chihuahua is doing. It handles the character, old-game grap
 
 ## Download
 
-Download [CHIHUAHUA_COMMUNITY_ENGINE.zip](./CHIHUAHUA_COMMUNITY_ENGINE.zip).
+Download [chihuahua-community-engine.zip](https://github.com/nosimajtechnology/chihuahua-community-engine/releases/latest/download/chihuahua-community-engine.zip) — the latest release, one file, ready to upload.
+
+## What you need
+
+- **ChatGPT with Skills.** The install steps below are the Skills menu in ChatGPT on the web or the desktop app. On a Business or Enterprise workspace an admin may need to turn Skills on.
+- **Image generation in ChatGPT** for pictures. The Engine makes the image right in the chat.
+- **A video model for video.** The Engine does not render video itself. For MINI, SCENE, BUMPER, and FAKE AD it writes the prompt; you paste that into Seedance, Kling, or another image-to-video model you already use.
 
 ## Canonical Character Reference
 
@@ -20,21 +26,17 @@ This turnaround is the official visual identity reference for keeping the same C
 
 This method works in regular ChatGPT on mobile and desktop.
 
-1. Unzip the full Chihuahua Community Engine package.
-2. Open the folder you just unzipped.
-3. Find `1_INSTALL_CHIHUAHUA_ENGINE.zip`. Leave this ZIP zipped.
-4. In ChatGPT, open **Plugins** from the sidebar.
-5. Open **Skills**, then choose **Create** and **Upload from your computer**.
-6. Select `1_INSTALL_CHIHUAHUA_ENGINE.zip`.
-7. Start a new Chat or Work session.
+1. Download the zip above. Do not unzip it.
+2. In ChatGPT, open **Plugins** → **Skills** → **Create** → **Upload from your computer**, and pick the zip.
+3. Start a new chat and say what Chihuahua is doing.
 
-Use this as your first prompt:
+Copy this for your first message:
 
-> Load the “Chihuahua Community Engine” skill.
+```
+Use the Chihuahua Community Engine to make an image of Chihuahua managing a cheap motel.
+```
 
-Then describe your idea:
-
-> Make an image of Chihuahua managing a cheap motel.
+Naming the Engine in the message makes sure it is the one that answers. You can also type `@` and choose it from the list. After that, one normal sentence per idea is enough.
 
 ## What you can make
 
@@ -44,12 +46,13 @@ Then describe your idea:
 - **BUMPER** — short loop
 - **FAKE AD** — fictional commercial
 
-You can name a mode or let the Engine choose.
+You can name a mode or let the Engine choose. IMAGE comes back as a picture; the other four come back as a first frame to approve, then a prompt for your video model.
 
 ## Need an idea?
 
-- Browse [30 community idea starters](./COMMUNITY_IDEAS.md).
+- Browse the [community idea starters](./COMMUNITY_IDEAS.md) — thirty one-liners, plus thirty more sorted by mode.
 - Try one of the [starter examples](./examples/README.md).
+- Read the [community guide](./docs/COMMUNITY_GUIDE.md) for the questions everyone asks first, or keep the [quick command card](./docs/QUICK_COMMAND_CARD.md) open.
 
 Copy an idea, change anything you want, and let the Engine handle the production details.
 

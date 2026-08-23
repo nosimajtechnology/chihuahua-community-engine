@@ -15,6 +15,8 @@ The first community release.
 
 ## Install
 
+*These are the v0.2 steps as shipped. The current install is three steps — see the [README](./README.md).*
+
 Download `CHIHUAHUA_COMMUNITY_ENGINE.zip`.
 
 Unzip the full package, but leave `1_INSTALL_CHIHUAHUA_ENGINE.zip` zipped. Upload that inner ZIP from **ChatGPT → Plugins → Skills → Create → Upload from your computer**.

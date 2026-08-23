@@ -10,23 +10,21 @@ Tell it what Chihuahua is doing. The Engine handles the rest.
 
 This works in regular ChatGPT on mobile and desktop.
 
-1. Unzip the full Chihuahua Community Engine package.
-2. Open the folder you just unzipped.
-3. Find `1_INSTALL_CHIHUAHUA_ENGINE.zip`. **Leave this ZIP zipped.**
-4. In ChatGPT, open **Plugins** from the sidebar.
-5. Open **Skills**, then choose **Create** and **Upload from your computer**.
-6. Select `1_INSTALL_CHIHUAHUA_ENGINE.zip`.
-7. Start a new **Chat** or **Work** session.
-
-Use this as your first prompt:
-
-> Load the “Chihuahua Community Engine” skill.
+1. Download [chihuahua-community-engine.zip](https://github.com/nosimajtechnology/chihuahua-community-engine/releases/latest/download/chihuahua-community-engine.zip). **Do not unzip it.**
+2. In ChatGPT, open **Plugins** → **Skills** → **Create** → **Upload from your computer**, and pick the zip.
+3. Start a new **Chat** or **Work** session.
 
 ## Start
 
-After it loads, type one normal sentence:
+Type one normal sentence. Name the Engine the first time so it is the one that answers:
 
-> Make an image of Chihuahua managing a cheap motel.
+```
+Use the Chihuahua Community Engine to make an image of Chihuahua managing a cheap motel.
+```
+
+After that, just say what Chihuahua is doing.
+
+Pictures are made in the chat. For video, the Engine writes the prompt and you paste it into your video model (see **Animate** below).
 
 ## Choose a mode — or do not
 
