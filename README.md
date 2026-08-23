@@ -71,10 +71,6 @@ This is a creative-production tool. It does not provide token trading advice, in
 
 Learn more about Nosimaj Media at [nosimaj.com](https://nosimaj.com).
 
-## License
+## Contributing
 
-The Chihuahua character and its reference artwork are licensed under [CC BY 4.0](./CHARACTER-LICENSE.md): make what you want with him, credit "Chihuahua character by Nosimaj Media", and do not call it official.
-
-Everything else here — the Skill, its reference documents, and these docs — is under the [MIT License](./LICENSE).
-
-Want to add an idea or report a problem? See [CONTRIBUTING.md](./CONTRIBUTING.md).
+Want to add an idea, fix a typo, or report a problem? See [CONTRIBUTING.md](./CONTRIBUTING.md).

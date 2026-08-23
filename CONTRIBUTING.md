@@ -26,9 +26,3 @@ Typos, unclear steps, broken links: open a pull request. No issue needed.
 Open an issue first and describe the behaviour you want to change and why.
 The Skill's instructions are the product; changes to them are decided by
 Nosimaj Media before any pull request is written.
-
-## Licensing of contributions
-
-By contributing you agree that your contribution is licensed under the same
-terms as the files you are changing: MIT for the Skill and documentation
-(`LICENSE`), CC BY 4.0 for character artwork (`CHARACTER-LICENSE.md`).
