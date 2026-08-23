@@ -71,6 +71,8 @@ This is a creative-production tool. It does not provide token trading advice, in
 
 Learn more about Nosimaj Media at [nosimaj.com](https://nosimaj.com).
 
-## Contributing
+## License
+
+The Skill, its reference documents, and these docs are under the [MIT License](./LICENSE). The character artwork is not covered by it.
 
 Want to add an idea, fix a typo, or report a problem? See [CONTRIBUTING.md](./CONTRIBUTING.md).

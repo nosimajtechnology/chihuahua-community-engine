@@ -26,3 +26,8 @@ Typos, unclear steps, broken links: open a pull request. No issue needed.
 Open an issue first and describe the behaviour you want to change and why.
 The Skill's instructions are the product; changes to them are decided by
 Nosimaj Media before any pull request is written.
+
+## Licensing of contributions
+
+Text and code you contribute are MIT, like the rest of the repo (`LICENSE`).
+That covers words and scripts only; it says nothing about artwork.
