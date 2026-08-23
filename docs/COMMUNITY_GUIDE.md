@@ -21,7 +21,7 @@ The Engine handles the character, camera, game graphics, and prompt.
 
 ## How do I install it?
 
-This works in regular ChatGPT on mobile and desktop.
+You need a paid ChatGPT plan (Plus or above — not Free or Go). Install from chatgpt.com or the desktop app (the Skills menu lives there). A Skill installed on the web is also there in the phone app.
 
 1. Download [chihuahua-community-engine.zip](https://github.com/nosimajtechnology/chihuahua-community-engine/releases/latest/download/chihuahua-community-engine.zip). **Do not unzip it.**
 2. In ChatGPT, open **Plugins** from the sidebar, then **Skills** → **Create** → **Upload from your computer**, and pick the zip.

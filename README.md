@@ -8,13 +8,13 @@ Tell the Engine what Chihuahua is doing. It handles the character, old-game grap
 
 ## What you need
 
-- **ChatGPT with Skills.** The install steps below use the Skills menu in ChatGPT. On a Business or Enterprise workspace an admin may need to turn Skills on.
+- **A paid ChatGPT plan.** Personal Skills are available on Plus, Pro, Business, Enterprise and Edu — not on Free or Go. On a Business, Enterprise or Edu workspace an admin may need to turn Skills on.
 - **Image generation in ChatGPT** for pictures. The Engine makes the image right in the chat.
 - **A video tool for video.** The Engine does not render video itself. For MINI, SCENE, BUMPER, and FAKE AD it writes the prompt; you paste that into Seedance, Kling, or another image-to-video tool. Those are separate products, not part of ChatGPT.
 
 ## Install in ChatGPT
 
-This method works in regular ChatGPT on mobile and desktop.
+Install from chatgpt.com or the desktop app (the Skills menu lives there). A Skill installed on the web is also there in the phone app.
 
 1. Download [chihuahua-community-engine.zip](https://github.com/nosimajtechnology/chihuahua-community-engine/releases/latest/download/chihuahua-community-engine.zip). **Do not unzip it.**
 2. In ChatGPT, open **Plugins** from the sidebar, then **Skills** → **Create** → **Upload from your computer**, and pick the zip.
