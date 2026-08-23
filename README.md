@@ -12,7 +12,7 @@ Download [chihuahua-community-engine.zip](https://github.com/nosimajtechnology/c
 
 ## What you need
 
-- **ChatGPT with Skills.** The install steps below are the Skills menu in ChatGPT on the web or the desktop app. On a Business or Enterprise workspace an admin may need to turn Skills on.
+- **ChatGPT with Skills.** The install steps below use the Skills menu in ChatGPT. On a Business or Enterprise workspace an admin may need to turn Skills on.
 - **Image generation in ChatGPT** for pictures. The Engine makes the image right in the chat.
 - **A video model for video.** The Engine does not render video itself. For MINI, SCENE, BUMPER, and FAKE AD it writes the prompt; you paste that into Seedance, Kling, or another image-to-video model you already use.
 
@@ -30,13 +30,19 @@ This method works in regular ChatGPT on mobile and desktop.
 2. In ChatGPT, open **Plugins** → **Skills** → **Create** → **Upload from your computer**, and pick the zip.
 3. Start a new chat and say what Chihuahua is doing.
 
-Copy this for your first message:
+Use this as your first prompt:
 
 ```
-Use the Chihuahua Community Engine to make an image of Chihuahua managing a cheap motel.
+Load the "Chihuahua Community Engine" skill.
 ```
 
-Naming the Engine in the message makes sure it is the one that answers. You can also type `@` and choose it from the list. After that, one normal sentence per idea is enough.
+Then describe your idea:
+
+```
+Make an image of Chihuahua managing a cheap motel.
+```
+
+You can also type `@` and choose the Engine from the list.
 
 ## What you can make
 

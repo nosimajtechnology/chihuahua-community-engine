@@ -14,15 +14,19 @@ This works in regular ChatGPT on mobile and desktop.
 2. In ChatGPT, open **Plugins** → **Skills** → **Create** → **Upload from your computer**, and pick the zip.
 3. Start a new **Chat** or **Work** session.
 
+Use this as your first prompt:
+
+```
+Load the "Chihuahua Community Engine" skill.
+```
+
 ## Start
 
-Type one normal sentence. Name the Engine the first time so it is the one that answers:
+After it loads, type one normal sentence:
 
 ```
-Use the Chihuahua Community Engine to make an image of Chihuahua managing a cheap motel.
+Make an image of Chihuahua managing a cheap motel.
 ```
-
-After that, just say what Chihuahua is doing.
 
 Pictures are made in the chat. For video, the Engine writes the prompt and you paste it into your video model (see **Animate** below).
 

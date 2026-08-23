@@ -2,9 +2,7 @@
 
 ## First prompt in a new session
 
-> Use the Chihuahua Community Engine. Chihuahua working at a motel.
-
-Name the Engine once per chat. After that, one normal sentence is enough.
+> Load the "Chihuahua Community Engine" skill.
 
 ## Make an image
 

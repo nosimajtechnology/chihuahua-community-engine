@@ -27,13 +27,13 @@ This works in regular ChatGPT on mobile and desktop.
 2. In ChatGPT, open **Plugins** → **Skills** → **Create** → **Upload from your computer**, and pick the zip.
 3. Start a new **Chat** or **Work** session.
 
-Name the Engine in your first message so it is the one that answers:
+Use this as your first prompt:
 
 ```
-Use the Chihuahua Community Engine to make an image of Chihuahua managing a cheap motel.
+Load the "Chihuahua Community Engine" skill.
 ```
 
-Then just describe your ideas.
+Then describe your idea.
 
 ## Do I need anything else?
 
