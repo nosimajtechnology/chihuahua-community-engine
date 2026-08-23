@@ -63,6 +63,10 @@ Suggested credit:
 
 > Chihuahua character by Nosimaj Media. Community-created scene.
 
+### Join the community
+
+See what others are creating, share your Chihuahua scenes, and find new ideas in the [Chihuahua Community on X](https://x.com/i/communities/2013614394538668190).
+
 This is a creative-production tool. It does not provide token trading advice, investment recommendations, price targets, or financial promises.
 
 Learn more about Nosimaj Media at [nosimaj.com](https://nosimaj.com).
