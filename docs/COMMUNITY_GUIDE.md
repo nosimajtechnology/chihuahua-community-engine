@@ -24,7 +24,7 @@ The Engine handles the character, camera, game graphics, and prompt.
 This works in regular ChatGPT on mobile and desktop.
 
 1. Download [chihuahua-community-engine.zip](https://github.com/nosimajtechnology/chihuahua-community-engine/releases/latest/download/chihuahua-community-engine.zip). **Do not unzip it.**
-2. In ChatGPT, open **Plugins** → **Skills** → **Create** → **Upload from your computer**, and pick the zip.
+2. In ChatGPT, open **Plugins** from the sidebar, then **Skills** → **Create** → **Upload from your computer**, and pick the zip.
 3. Start a new **Chat** or **Work** session.
 
 Use this as your first prompt:
