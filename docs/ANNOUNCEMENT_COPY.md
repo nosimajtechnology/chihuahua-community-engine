@@ -15,13 +15,15 @@ commercials
 
 same Chihuahua. different minds.
 
+github.com/nosimajtechnology/chihuahua-community-engine
+
 ## X — optional reply
 
 the character reference + old-game rules are already built in
 
 bring your own ideas and post what you make
 
-works in ChatGPT on mobile + desktop 🐕
+install from chatgpt.com; desktop app setup is separate 🐕
 
 ## Telegram
 
@@ -44,11 +46,14 @@ Bring your own ideas and share what you make.
 
 Same Chihuahua. Different minds.
 
-Works in ChatGPT on mobile and desktop.
+Install from chatgpt.com. Desktop app setup is separate.
+
+Download + install (one zip, three steps):
+https://github.com/nosimajtechnology/chihuahua-community-engine
 
 ## Discord
 
-## CHIHUAHUA COMMUNITY ENGINE 🐕
+**CHIHUAHUA COMMUNITY ENGINE** 🐕
 
 Anyone can make Chihuahua content now.
 
@@ -71,4 +76,6 @@ are welcome.
 
 **Same Chihuahua. Different minds.**
 
-Works in ChatGPT on mobile and desktop.
+Install from chatgpt.com. Desktop app setup is separate.
+
+Download + install (one zip, three steps): <https://github.com/nosimajtechnology/chihuahua-community-engine>
