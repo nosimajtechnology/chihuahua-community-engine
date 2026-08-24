@@ -21,23 +21,27 @@ The Engine handles the character, camera, game graphics, and prompt.
 
 ## How do I install it?
 
-This works in regular ChatGPT on mobile and desktop.
+You need a paid ChatGPT plan; Personal Skills are not available on Free or Go. Install from chatgpt.com in a browser. If you also use the desktop app, add the Skill there separately.
 
-1. Unzip the full Chihuahua Community Engine package.
-2. Open the folder you just unzipped.
-3. Find `1_INSTALL_CHIHUAHUA_ENGINE.zip`. **Leave this ZIP zipped.**
-4. In ChatGPT, open **Plugins** from the sidebar.
-5. Open **Skills**, then choose **Create** and **Upload from your computer**.
-6. Select `1_INSTALL_CHIHUAHUA_ENGINE.zip`.
-7. Start a new **Chat** or **Work** session.
+1. Download [chihuahua-community-engine.zip](https://github.com/nosimajtechnology/chihuahua-community-engine/releases/latest/download/chihuahua-community-engine.zip). **Do not unzip it.**
+2. In ChatGPT, open **Plugins** from the sidebar, then **Skills** → **Create** → **Upload from your computer**, and pick the zip.
+3. Start a new **Chat** or **Work** session.
 
 Use this as your first prompt:
 
-> Load the “Chihuahua Community Engine” skill.
+```
+Load the "Chihuahua Community Engine" skill.
+```
 
 Then describe your idea.
 
-## Can I only make images?
+## Do I need anything else?
+
+For pictures, no — ChatGPT makes the image in the chat.
+
+For video, yes. The Engine does not render video. It writes the prompt, and you paste that into Seedance, Kling, or another image-to-video model you already have access to.
+
+## Can I make just one image?
 
 Yes. IMAGE is the simplest mode.
 
