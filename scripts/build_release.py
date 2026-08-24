@@ -9,11 +9,20 @@ your computer). ChatGPT accepts a zip whose only top-level entry is the
 skill folder, so that is exactly what this produces. The folder on disk is
 the source of truth; never edit a zip by hand.
 
-Validation mirrors the upload limits published for Skills: one SKILL.md with
-name and description in its front matter, every file under 25 MB, fewer than
-500 files, every relative link in a markdown file resolving to a real file.
-The build is deterministic - same input bytes, same zip bytes - so a rebuilt
-release can be compared against a published one.
+Validation checks the shape a Skill must have (one SKILL.md at the top with
+name and description in its front matter, every relative link in a markdown
+file resolving to a real file) and the size limits OpenAI publishes for the
+Skills API - "Limits and validation" at
+https://developers.openai.com/api/docs/guides/tools-skills - at most 500
+files, at most 25 MB uncompressed, a zip of at most 50 MB. Those are the API's
+numbers; OpenAI does not publish separate figures for the ChatGPT upload, so
+this script treats them as guardrails, not as a promise about ChatGPT.
+
+Fixed timestamps and a fixed file order make the build reproducible on one
+machine: run it twice, get the same bytes. Across machines the contents are
+identical but the bytes can differ, because different zlib builds compress
+the same input differently. The hash to quote is the one in the SHA256SUMS
+that the release workflow attaches; compare a rebuild by extracting both.
 """
 import hashlib
 import re
@@ -26,9 +35,13 @@ SKILL_DIR = ROOT / "skill" / "chihuahua-community-engine"
 DIST = ROOT / "dist"
 ZIP_NAME = "chihuahua-community-engine.zip"
 
+# From https://developers.openai.com/api/docs/guides/tools-skills, "Limits and
+# validation". The 25 MB line reads "maximum uncompressed file size"; checking
+# the total is the stricter reading and covers the per-file one.
 MAX_FILES = 500
-MAX_FILE_BYTES = 25 * 1024 * 1024
-# Fixed timestamp so the zip is byte-for-byte reproducible.
+MAX_UNCOMPRESSED_BYTES = 25 * 1024 * 1024
+MAX_ZIP_BYTES = 50 * 1024 * 1024
+# Fixed timestamp so two builds on the same machine produce the same bytes.
 FIXED_TIME = (2026, 1, 1, 0, 0, 0)
 LINK = re.compile(r"\]\(([^)\s#]+)(?:#[^)]*)?\)")
 
@@ -65,10 +78,9 @@ def validate():
         if not fields.get(key, "").strip():
             fail(f"SKILL.md front matter is missing '{key}'")
 
-    for p in files:
-        size = p.stat().st_size
-        if size > MAX_FILE_BYTES:
-            fail(f"{p.relative_to(ROOT)} is {size} bytes; the limit is {MAX_FILE_BYTES}")
+    total = sum(p.stat().st_size for p in files)
+    if total > MAX_UNCOMPRESSED_BYTES:
+        fail(f"{total} bytes uncompressed; the limit is {MAX_UNCOMPRESSED_BYTES}")
 
     for p in files:
         if p.suffix.lower() != ".md":
@@ -98,6 +110,8 @@ def build(files):
         tops = {n.split("/", 1)[0] for n in z.namelist()}
         if tops != {SKILL_DIR.name}:
             fail(f"zip must contain exactly one top-level folder, got {sorted(tops)}")
+    if out.stat().st_size > MAX_ZIP_BYTES:
+        fail(f"{out.relative_to(ROOT)} is {out.stat().st_size} bytes; the limit is {MAX_ZIP_BYTES}")
 
     digest = hashlib.sha256(out.read_bytes()).hexdigest()
     (DIST / "SHA256SUMS").write_text(f"{digest}  {ZIP_NAME}\n", encoding="utf-8")
