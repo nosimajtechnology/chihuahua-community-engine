@@ -1,0 +1,52 @@
+# Validates the Skill folder and builds the installable zip on every push and
+# pull request. On a v* tag it also attaches that zip to a GitHub Release.
+#
+# Cut a release:   git tag v0.3 && git push origin v0.3
+# The zip is then always available at a stable address:
+#   https://github.com/nosimajtechnology/chihuahua-community-engine/releases/latest/download/chihuahua-community-engine.zip
+#
+# The hash in the Release's SHA256SUMS is the one to quote. A zip built on
+# another machine has the same contents but not always the same bytes, because
+# different zlib builds compress the same input differently.
+name: release
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+# Read-only by default. Only the release job, which runs on tags, may write.
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate the Skill folder and build the zip
+        run: python3 scripts/build_release.py
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the Skill zip
+        run: python3 scripts/build_release.py
+
+      - name: Attach to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            dist/chihuahua-community-engine.zip dist/SHA256SUMS \
+            --title "Chihuahua Community Engine ${GITHUB_REF_NAME}" \
+            --generate-notes
