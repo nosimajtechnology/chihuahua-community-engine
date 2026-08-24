@@ -30,4 +30,6 @@ Nosimaj Media before any pull request is written.
 ## Licensing of contributions
 
 Text and code you contribute are MIT, like the rest of the repo (`LICENSE`).
-That covers words and scripts only; it says nothing about artwork.
+That covers words and scripts only. The Chihuahua himself — artwork, name,
+visual identity — is under `ASSET_LICENSE.md`, and contributing here neither
+grants nor changes any rights in the character.
