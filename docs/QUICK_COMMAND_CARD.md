@@ -2,7 +2,7 @@
 
 ## First prompt in a new session
 
-> Load the “Chihuahua Community Engine” skill.
+> Load the "Chihuahua Community Engine" skill.
 
 ## Make an image
 
