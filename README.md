@@ -112,3 +112,19 @@ See what others are creating, share your Chihuahua scenes, and find new ideas in
 This is a creative-production tool. It does not provide token trading advice, investment recommendations, price targets, or financial promises.
 
 Learn more about Nosimaj Media at [nosimaj.com](https://nosimaj.com).
+
+## License
+
+Two licenses, one line between them: the tooling and the words are open; the Chihuahua is not.
+
+| Material | License |
+|---|---|
+| The Skill's instructions — `SKILL.md`, `agents/openai.yaml`, and the `references/*.md` rules inside the install zip | [MIT](./LICENSE) |
+| Everything else written — this README, the package docs (`2_START_HERE` … `6_QUICK_COMMAND_CARD`), `COMMUNITY_IDEAS.md`, `COMMUNITY_TRANSMISSIONS.md`, the release notes, `examples/`, and any scripts | [MIT](./LICENSE) |
+| The Chihuahua — `assets/chihuahua-character-sheet.png`, the reference images inside the install zip (`chihuahua-character-sheet.png`, `CHIHUAHUA_MASTER_REFERENCE.jpg`), the character's name, and his visual identity | [Chihuahua Community Asset License](./ASSET_LICENSE.md) |
+
+The asset license lets you make and share unofficial Community Engine images and videos, ordinary social-platform monetization included. Merchandise, products, client work, competing packs, token or NFT projects, and anything that implies an official stamp need written permission from Nosimaj Media LLC.
+
+Copyright © 2026 Nosimaj Media LLC.
+
+Want to add an idea, fix a typo, or report a problem? See [CONTRIBUTING.md](./CONTRIBUTING.md).

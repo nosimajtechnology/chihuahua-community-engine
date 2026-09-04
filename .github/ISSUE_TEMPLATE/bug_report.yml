@@ -1,0 +1,61 @@
+name: Bug report
+description: The Engine did something wrong, or the install did not work
+labels: [bug]
+body:
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Where were you using it?
+      options:
+        - ChatGPT web
+        - ChatGPT desktop app
+        - ChatGPT mobile app
+        - Codex
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - IMAGE
+        - MINI
+        - SCENE
+        - BUMPER
+        - FAKE AD
+        - Install / setup
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Engine version
+      description: From the release you downloaded, or the top of SKILL.md
+      placeholder: v0.2
+  - type: textarea
+    id: prompt
+    attributes:
+      label: What did you type?
+      description: The exact prompt, copied as-is.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Paste the Engine's reply. Attach the image if there is one.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Video model, if any
+      placeholder: Seedance / Kling / none
