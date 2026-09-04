@@ -37,6 +37,12 @@ one primary role: identity, style, storyboard order, environment, prop/vehicle,
 or motion. A motion reference cannot silently become rendering or audio
 authority.
 
+For Late-Z H3 Max R2V, the fewest complete package is one file: the approved
+Late-Z Chihuahua sheet as `Image 1`. It replaces the normal canonical-plus-style
+video package for this route only. Add a narrowly assigned reference only when
+the user asks for it, the scene materially requires it, or a failed generation
+needs a targeted repair; keep the Late-Z sheet first and omit unused slots.
+
 ## Seedance
 
 Prefer reference-to-video when the current interface allows it.

@@ -57,8 +57,9 @@ OVA Crime/Action** after mode selection. For fal.ai MiniMax H3 Max video:
   opening frame and uses the storyboard as planning authority.
 - **Direct Explore / T2V** creates self-contained text-only concepts with no
   references.
-- **Character Lock / R2V** places the canonical Chihuahua sheet first and any
-  active style sheet second as rendering-only authority.
+- **Character Lock / R2V** uses the approved Late-Z Chihuahua sheet as `Image 1`
+  and the only default reference when Late-Z is active. Other styles keep their
+  existing reference setup.
 
 ## Source of truth
 
@@ -72,6 +73,19 @@ only for compatibility.
 This turnaround is the official visual identity reference for keeping the same Chihuahua across community creations. Keep the pink durag, head shape, eyes, body proportions, fur color, and silhouette consistent; scenes, outfits, props, poses, and expressions may change.
 
 ![Pink Durag Chihuahua character reference](./assets/chihuahua-character-sheet.png)
+
+## Style reference sheets
+
+These approved sheets are bundled with the Engine and displayed here without
+alteration.
+
+### Late-Z Battle Cel
+
+![Chihuahua Late-Z Battle Cel character sheet](./skill/chihuahua-community-engine/assets/style-adapters/late-z-battle-cel/chihuahua-character-sheet-v1.jpeg)
+
+### Late-90s OVA Crime/Action
+
+![Chihuahua Late-90s OVA Crime Action character sheet](./skill/chihuahua-community-engine/assets/style-adapters/late-90s-ova-crime-action/chihuahua-character-sheet-v1.png)
 
 ## Need an idea?
 

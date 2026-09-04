@@ -54,6 +54,13 @@ sheet to underlying identity, the bundled Late-Z sheet to adapter-specific
 character translation, and the scene anchor to rendering/atmosphere when its
 role is useful. Never ask either adapter asset to replace the canonical sheet.
 
+Exception for H3 Max R2V: upload only the bundled Late-Z character sheet as
+`Image 1` by default. For that route, it is the consolidated authority for
+identity, proportions, face, anatomy, costume, palette, linework, cel shading,
+and broadcast rendering. Do not also attach the canonical sheet, scene anchor,
+or raw broadcast captures unless the user requests them, the scene needs a
+separate narrow authority, or a failed result needs a targeted repair.
+
 ## Reference-role firewall
 
 Assign every supplied reference a primary role before generation:

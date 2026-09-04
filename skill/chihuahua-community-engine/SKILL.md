@@ -3,7 +3,7 @@ name: chihuahua-community-engine
 description: Create and repair community-made media featuring Nosimaj Media's pink-durag Chihuahua in authentic early-2000s game graphics or registered period-animation styles. Use for Chihuahua still images, fake game screenshots, portraits, memes, short mini animations, 4-6 shot cinematics, loopable bumpers or interstitials, fictional commercials, storyboards, image-to-video prompts, Seedance or Kling packaging, continuity fixes, and ordinary-language requests such as "Chihuahua owns a pawn shop" or "turn this image into a scene."
 ---
 
-# Chihuahua Community Engine v0.7.0
+# Chihuahua Community Engine v0.7.1
 
 Act as a simple community creative director for one character: the pink-durag
 Chihuahua. Let the user supply the idea. Handle identity, old-game rendering,
@@ -137,7 +137,7 @@ Only for ambiguous video intent, show:
 >
 > **DIRECT EXPLORE** — text-only concept iteration with no references
 >
-> **CHARACTER LOCK** — preserve Chihuahua from his canonical sheet without fixing the opening frame
+> **CHARACTER LOCK** — preserve Chihuahua from the selected character sheet without fixing the opening frame
 
 This is a production choice, not another setup questionnaire. Read
 [CINEMATIC_MODES.md](references/CINEMATIC_MODES.md) for route behavior. When H3
@@ -254,7 +254,9 @@ than three concise concepts when development is needed. If the premise is
 already clear, optimize one strong direction and continue. CLASSIC CONTROL uses
 the existing first-frame and storyboard approval flow. DIRECT EXPLORE goes
 straight to a text-only T2V concept and prompt. CHARACTER LOCK builds an R2V
-prompt from the canonical sheet without requiring a first frame.
+prompt without requiring a first frame. For Late-Z H3 Max R2V, the approved
+Late-Z character sheet is `Image 1` and the only default uploaded reference.
+Other styles retain their existing reference architecture.
 
 ### BUMPER
 
@@ -334,6 +336,14 @@ another. Deliver:
 Treat model behavior as changeable. Do not invent a model limit, control, or
 capability. If an interface feature is unknown, say `unverified or variable`
 and use generic image-to-video packaging.
+
+For Late-Z H3 Max R2V, package only the approved Late-Z Chihuahua sheet as
+`Image 1` by default. It is the combined authority for identity, facial
+construction, anatomy, costume, proportions, palette, linework, cel shading,
+and era-specific broadcast rendering. Do not also attach the canonical sheet,
+scene anchor, raw broadcast frames, or other construction assets unless the
+user requests them, the scene materially needs another narrow authority, or a
+failed generation requires a targeted repair.
 
 When an exact prompt limit is requested, measure the final prompt. Preserve in
 this order: Chihuahua identity and anatomy, continuity, shot progression,

@@ -91,8 +91,9 @@ frame; the storyboard is planning authority and is not uploaded by default.
 
 For DIRECT EXPLORE, skip image generation and references and build a fully
 descriptive H3 Max T2V concept. For CHARACTER LOCK, skip the Genesis Frame and
-use the canonical sheet as primary H3 Max R2V identity authority. Read
-`model-adapters/fal-h3-max.md` for exact packaging.
+use the selected character sheet as H3 Max R2V authority. When Late-Z is active,
+the approved Late-Z sheet is `Image 1` and the only default uploaded reference.
+Read `model-adapters/fal-h3-max.md` for exact packaging.
 
 ## BUMPER
 
