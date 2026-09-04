@@ -3,12 +3,15 @@
 ## Contents
 
 1. Preserve first
-2. Period motion
-3. Model-neutral multi-shot brief
-4. Model-neutral one-take brief
-5. Audio meaning
-6. Final handoff
-7. Prompt compression
+2. Assign reference roles
+3. Period motion
+4. Rhythm roles and motion budget
+5. State changes
+6. Model-neutral multi-shot brief
+7. Model-neutral one-take brief
+8. Audio meaning
+9. Final handoff
+10. Prompt compression
 
 Animate approved imagery. Do not redesign it.
 
@@ -21,7 +24,20 @@ Animate approved imagery. Do not redesign it.
 - lighting, palette, old-game build, and texture behavior
 - screen direction, spatial anchors, and progressive action state
 
+## Assign reference roles
+
+Before animation, assign every reference a primary role: `IDENTITY`, `STYLE`,
+`PROJECT`, or `MOTION`. List any intentional secondary role explicitly. A motion
+reference controls timing, cuts, pose cadence, camera rhythm, or effects only;
+it does not override identity, rendering, palette, environment, or audio.
+
+Ignore source watermarks, captions, crop, letterboxing, interface elements, and
+audio unless the user explicitly makes one authoritative.
+
 ## Period motion
+
+Use the selected style adapter's motion grammar when it defines one. Otherwise
+use the default old-game motion below.
 
 Favor:
 
@@ -48,6 +64,28 @@ Avoid:
 - excessive motion blur
 - a held-image slideshow when motion is expected
 
+## Rhythm roles and motion budget
+
+Tag every multi-shot beat:
+
+- `HOLD`: tension, observation, strain, or reaction with limited secondary motion
+- `BURST`: one decisive movement or action
+- `INSERT`: an extremely brief eye, hand, prop, lightning, or impact detail
+- `REVEAL`: a readable new state or aftermath that deserves a hold
+
+Storyboard panels do not imply equal duration. Principal shots may breathe;
+inserts should remain brief. Give each shot one dominant motion channel:
+`SUBJECT`, `CAMERA`, or `EFFECTS`. Keep the other channels restrained. A held
+subject may use one optical push-in or environmental effects, not both
+aggressively.
+
+## State changes
+
+For transformations, damage changes, wardrobe changes, or animated colorways,
+record `PRE-STATE`, `CHANGE ONLY`, and `POST-STATE`. Preserve every unnamed
+layer. Prefer a decisive transition between locked states instead of asking the
+model to continuously reinterpret the character.
+
 ## Model-neutral multi-shot brief
 
 Create this before a named adapter:
@@ -60,11 +98,16 @@ SHOT COUNT:
 FORMAT:
 HISTORICAL BUILD:
 VISUAL AUTHORITY:
+REFERENCE ROLES:
+MOTION PROFILE:
+STATE CHANGE:
 AUDIO INTENT:
 
 SHOT 1
+RHYTHM ROLE:
+DOMINANT MOTION:
 CAMERA:
-CHIHUAHUA ACTION:
+SUBJECT ACTION:
 ENVIRONMENTAL MOTION:
 SPATIAL STATE:
 TRANSITION:
@@ -77,8 +120,8 @@ ESSENTIAL NEGATIVES:
 LOOP CONDITION:
 ```
 
-Give every shot one main action and one dominant camera idea. Use environmental
-motion only where it keeps the footage alive or clarifies depth.
+Give every shot one main action and one dominant motion channel. Use
+environmental motion only where it keeps the footage alive or clarifies depth.
 
 When timing is useful, make the shot ranges total the exact requested runtime.
 Treat written timecodes as direction unless the selected host documents precise
@@ -146,10 +189,10 @@ Support full, compressed, strongly compressed, and exact-limit output.
 Preserve in order:
 
 1. Chihuahua identity and bipedal anatomy
-2. central action and continuity
-3. shot order and spatial progression
-4. old-game construction and rendering
-5. camera and period motion
+2. central action, continuity, and state-change delta
+3. shot order, rhythm roles, and spatial progression
+4. selected style construction and rendering
+5. camera, motion profile, and period cadence
 6. decisive negatives
 7. secondary atmosphere
 

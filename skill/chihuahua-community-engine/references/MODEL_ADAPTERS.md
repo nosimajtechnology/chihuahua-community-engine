@@ -11,6 +11,14 @@
 Keep the core Chihuahua, storyboard, continuity, and old-game rules independent
 from any one video model. Treat model interfaces and limits as changeable.
 
+## fal.ai MiniMax H3 Max
+
+For H3 Max, I2V, T2V, R2V, Classic Control, Direct Explore, or Character Lock,
+read [fal-h3-max.md](model-adapters/fal-h3-max.md). That adapter controls route
+selection, reference order, seed optimization, prompt structure, and verified
+fal.ai fields. It may translate packaging but cannot override Chihuahua
+identity, approved continuity, or the selected style adapter.
+
 ## Shared preparation
 
 Before adapting, require:
@@ -18,12 +26,16 @@ Before adapting, require:
 - approved image or storyboard when available
 - compact project lock
 - model-neutral Animation Brief or Micro-Motion Brief
+- reference-role map and selected motion profile when relevant
+- explicit pre-state, change-only delta, and post-state for transformations
 - requested duration and aspect ratio
 - audio intent
 - prompt packaging level or exact limit
 
 Use the fewest references that fully define the work. Assign every reference
-one role: identity, storyboard order, environment, prop/vehicle, or motion.
+one primary role: identity, style, storyboard order, environment, prop/vehicle,
+or motion. A motion reference cannot silently become rendering or audio
+authority.
 
 ## Seedance
 
@@ -38,6 +50,10 @@ Useful role pattern:
 @Image 4 = decisive prop or vehicle, only when needed
 ```
 
+When the current interface accepts a video reference, label it `motion cadence
+only`. Ignore its characters, rendering, palette, crop, watermark, captions,
+and audio unless the user explicitly assigns another role.
+
 For BUMPER or one-shot MINI, use one approved still rather than a contact sheet.
 
 Prompt order:
@@ -47,15 +63,18 @@ Prompt order:
 3. Chihuahua identity and bipedal lock
 4. historical rendering contract
 5. compact project lock
-6. global camera and period-motion rules
-7. chronological shot plan, or one continuous motion for BUMPER
-8. continuity and spatial restrictions
-9. audio intent
-10. decisive negatives
+6. state-change lock when relevant
+7. selected motion profile, rhythm roles, and dominant motion channels
+8. chronological shot plan, or one continuous motion for BUMPER
+9. continuity and spatial restrictions
+10. audio intent
+11. decisive negatives
 
 Use explicit shot order and plain time ranges when helpful. Do not assume
-frame-exact timecode control. If the board becomes a collage, repeat the order
-in text or animate shots separately from the same lock.
+frame-exact timecode control. Do not give every panel equal duration: principal
+shots may hold while impact or detail inserts remain brief. If the board becomes
+a collage, repeat the order in text or animate shots separately from the same
+lock.
 
 If the interface supports audio, still state the exact desired route. Use
 `NO MUSIC` for ambience/effects without a score and `NO AUDIO` for silence.
@@ -109,10 +128,13 @@ Generic prompt order:
 
 ```text
 INPUT AUTHORITY
+REFERENCE ROLES
 FORMAT AND DURATION
 CHIHUAHUA IDENTITY AND BIPEDAL LOCK
 HISTORICAL RENDERING CONTRACT
 PROJECT LOCK
+STATE CHANGE
+MOTION PROFILE AND RHYTHM ROLES
 GLOBAL CAMERA AND MOTION
 SHOT PLAN OR CONTINUOUS ONE-TAKE MOTION
 CONTINUITY

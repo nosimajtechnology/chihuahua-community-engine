@@ -82,11 +82,17 @@ Each route contains:
 - ending
 
 If the user's premise is already strong, do not make them choose from options.
-Create the first frame.
+Optimize one direction and continue through the selected creation route.
 
-After first-frame approval, create a clean continuous storyboard using
-`STORYBOARD_RULES.md`. After storyboard approval, create the model-neutral
-Animation Brief and the selected adapter prompt.
+For CLASSIC CONTROL, create the Genesis Frame, obtain approval, create a clean
+continuous storyboard using `STORYBOARD_RULES.md`, then build the model-neutral
+Animation Brief and H3 Max I2V prompt. Upload the Genesis Frame as the opening
+frame; the storyboard is planning authority and is not uploaded by default.
+
+For DIRECT EXPLORE, skip image generation and references and build a fully
+descriptive H3 Max T2V concept. For CHARACTER LOCK, skip the Genesis Frame and
+use the canonical sheet as primary H3 Max R2V identity authority. Read
+`model-adapters/fal-h3-max.md` for exact packaging.
 
 ## BUMPER
 

@@ -1,4 +1,14 @@
 interface:
-  display_name: "Chihuahua Community Engine"
-  short_description: "Create Chihuahua images, scenes, loops, and ads"
-  default_prompt: "Use $chihuahua-community-engine to make an image of Chihuahua working the night shift at a gas station."
+  display_name: Chihuahua Community Engine
+  short_description: Create Chihuahua images, scenes, loops, and ads
+  default_prompt: Use $chihuahua-community-engine to make an image of Chihuahua working
+    the night shift at a gas station.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

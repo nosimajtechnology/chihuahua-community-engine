@@ -4,13 +4,13 @@ An easy creative tool for making images and short videos with Nosimaj Media's pi
 
 You do not need to know prompting.
 
-Tell the Engine what Chihuahua is doing. It handles the character, old-game graphics, camera direction, continuity, storyboards, animation prompts, and common repairs.
+Tell the Engine what Chihuahua is doing. It handles the character, old-game graphics, registered visual styles, camera direction, continuity, storyboards, animation prompts, and common repairs.
 
 ## What you need
 
 - **A paid ChatGPT plan.** Personal Skills are not available on Free or Go. On a managed workspace, an admin may need to turn Skills on.
 - **Image generation in ChatGPT** for pictures. The Engine makes the image right in the chat.
-- **A video tool for video.** The Engine does not render video itself. For MINI, SCENE, BUMPER, and FAKE AD it writes the prompt; you paste that into Seedance, Kling, or another image-to-video tool. Those are separate products, not part of ChatGPT.
+- **A video tool for video.** The Engine does not render video itself. For MINI, SCENE, BUMPER, and FAKE AD it writes the prompt; you paste that into fal.ai MiniMax H3 Max, Seedance, Kling, or another video tool. Those are separate products, not part of ChatGPT.
 
 ## Install in ChatGPT
 
@@ -47,6 +47,25 @@ He has four legs. Fix only that.
 - **FAKE AD** — fictional commercial
 
 You can name a mode or let the Engine choose. IMAGE comes back as a picture; the other four come back as a first frame to approve, then a prompt for your video model.
+
+## Styles and H3 Max routes
+
+The Engine now offers **Flagship PS2**, **Late-Z Battle Cel**, and **Late-90s
+OVA Crime/Action** after mode selection. For fal.ai MiniMax H3 Max video:
+
+- **Classic Control / I2V** keeps the approved Genesis Frame as the literal
+  opening frame and uses the storyboard as planning authority.
+- **Direct Explore / T2V** creates self-contained text-only concepts with no
+  references.
+- **Character Lock / R2V** places the canonical Chihuahua sheet first and any
+  active style sheet second as rendering-only authority.
+
+## Source of truth
+
+The installable, canonical Skill lives in
+[`skill/chihuahua-community-engine/`](./skill/chihuahua-community-engine/).
+Release ZIPs are built from that folder; the older top-level package is retained
+only for compatibility.
 
 ## Canonical Character Reference
 

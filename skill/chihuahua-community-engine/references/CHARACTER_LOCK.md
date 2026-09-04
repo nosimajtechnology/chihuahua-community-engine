@@ -108,6 +108,11 @@ Favor head angle, posture, eye direction, and a small mouth change. Avoid
 rubbery modern facial animation, giant smiles, human teeth, or expressive
 Pixar-like deformation.
 
+An explicitly selected style adapter may reshape the visible eyelid aperture
+for a local expression while preserving two eyes, their large scale, spacing,
+dark canine fill, forward orientation, and relationship to the muzzle. Treat
+this as expression styling, not a permanent identity redesign.
+
 ## Never default to
 
 - quadrupedal dog anatomy

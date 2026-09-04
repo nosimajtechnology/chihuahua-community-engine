@@ -41,6 +41,7 @@ layer failed.
 9. clothing changes unexpectedly
 10. props, product, vehicle, or environment mutate
 11. motion becomes too realistic or camera becomes too modern
+12. transformation morphs, held drawings crawl, or grain boils
 
 Identity and anatomy outrank decoration.
 
@@ -79,6 +80,9 @@ head, one torso, two forearms, two hind legs, and no hidden or duplicated limbs.
 If a table, pool edge, or vehicle hides the body, ask the model to keep the
 hidden anatomy coherent rather than inventing another leg set.
 
+For melee, reduce the affected shot to one readable strike and one attack path.
+Separate contact from follow-through when overlapping poses cause duplication.
+
 ### Face changed
 
 Use the canonical character sheet and latest approved image as face authority. Lock eye
@@ -110,6 +114,9 @@ border.
 Lock two large dark glossy eyes with the same size, placement, forward-facing
 orientation, and simple reflections as the authority. Change only the failed
 eye region. Do not change the muzzle, ears, durag, expression, or camera.
+When an approved style-local expression preset changes the visible eyelid
+aperture, preserve that aperture while still locking eye count, scale, spacing,
+dark canine fill, and gaze direction.
 
 ### One storyboard shot is wrong
 
@@ -139,6 +146,26 @@ scale, horizon, and background do not move.`
 Keep the storyboard and identity. Add one purposeful action source to each shot
 and restrained environmental or camera motion. Do not redesign frames or add
 unrelated activity.
+
+### Camera feels stiff
+
+Do not add constant movement. Restore rhythm through shot-scale contrast, a
+restrained push-in, a brief detail insert, or a decisive cut. Keep one dominant
+motion channel per shot.
+
+### Transformation morphs between states
+
+Lock exact pre- and post-transformation states. Name only the intended delta.
+Bridge them with environmental escalation and a brief impact or silhouette
+insert, then hard-cut to the completed post-state. Do not continuously morph
+the face, anatomy, eyes, clothing, or durag geometry.
+
+### Lines, shadows, or grain crawl
+
+Lock the approved contours, face construction, cel-shadow shapes, and palette.
+Keep fine grain stable as a finishing texture. Animate only the declared
+subject, camera, or effects channel; no line boil or independently changing
+noise.
 
 ## Escalate only when necessary
 

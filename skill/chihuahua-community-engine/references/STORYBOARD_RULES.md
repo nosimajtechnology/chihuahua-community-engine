@@ -5,9 +5,10 @@
 1. Before storyboarding
 2. Choose the smallest shot count
 3. Build progressive action
-4. Vary camera with purpose
-5. Contact-sheet generation
-6. Storyboard delivery
+4. Assign rhythm roles
+5. Vary camera with purpose
+6. Contact-sheet generation
+7. Storyboard delivery
 
 A storyboard is one continuous piece of footage. It is not a grid of unrelated
 Chihuahua ideas.
@@ -59,6 +60,19 @@ Track state between shots:
 If Chihuahua picks up a phone, the next shot must keep it in his paw unless the
 action shows him putting it down.
 
+For a transformation, show an intact pre-state, a brief transition beat, and an
+intact post-state. The transition panel is not permission to blend or redesign
+the character between them. For combat, show one readable attack path per panel
+and separate contact from follow-through when overlap would obscure anatomy.
+
+## Assign rhythm roles
+
+Store one role with each panel: `HOLD`, `BURST`, `INSERT`, or `REVEAL`.
+Contact-sheet panels remain equal in size for readability, but they do not imply
+equal screen time. Treat an impact, eye, hand, lightning, or flash panel as a
+brief insert unless the story requires a hold. Carry the roles into the
+animation brief without rendering labels into the board.
+
 ## Vary camera with purpose
 
 Create rhythm from a deliberate mix of:
@@ -91,6 +105,7 @@ When generating one board:
 - keep one rendering contract in every panel
 - preserve identical Chihuahua, clothing, props, vehicle, and environment assets
 - preserve screen direction and progressive action
+- preserve locked pre- and post-states around any transformation
 - omit captions, numbers, HUD, logos, and interface text unless requested
 - never add extra limbs or another Chihuahua to explain motion
 
